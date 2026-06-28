@@ -25,22 +25,25 @@ export type Message = {
 }
 
 export async function callCoach(messages: Message[], apiKey: string): Promise<string> {
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
+  const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'x-api-key': apiKey,
-      'anthropic-version': '2023-06-01',
+      'Authorization': `Bearer ${apiKey}`,
     },
     body: JSON.stringify({
-      model: 'claude-sonnet-4-6',
+      model: 'anthropic/claude-3.5-sonnet', // Gọi model Claude 3.5 Sonnet qua OpenRouter
       max_tokens: 1000,
-      system: COACH_SYSTEM_PROMPT,
-      messages,
+      messages: [
+        { role: 'system', content: COACH_SYSTEM_PROMPT },
+        ...messages,
+      ],
     }),
   })
 
   if (!res.ok) throw new Error('API error')
   const data = await res.json()
-  return data.content.filter((b: {type:string}) => b.type === 'text').map((b: {text:string}) => b.text).join('')
+  
+  // Bóc tách dữ liệu theo chuẩn định dạng OpenAI của OpenRouter
+  return data.choices[0].message.content
 }
