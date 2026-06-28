@@ -32,7 +32,7 @@ export async function callCoach(messages: Message[], apiKey: string): Promise<st
       'Authorization': `Bearer ${apiKey}`,
     },
     body: JSON.stringify({
-      model: 'anthropic/claude-3.5-sonnet', // Gọi model Claude 3.5 Sonnet qua OpenRouter
+      model: 'deepseek/deepseek-v4-flash', // Gọi model Claude 3.5 Sonnet qua OpenRouter
       max_tokens: 1000,
       messages: [
         { role: 'system', content: COACH_SYSTEM_PROMPT },
