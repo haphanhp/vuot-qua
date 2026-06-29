@@ -34,8 +34,8 @@ export const strings = {
     bestRecord: 'Kỷ lục cá nhân',
     iHaveCraving: '⚡ Tôi đang thèm — cần giúp ngay',
     cravingSubtext: 'Nhấn để bắt đầu kỹ thuật vượt cơn thèm',
-    commonTriggers: 'Tác nhân thường gặp',
-    triggerHelp: 'Nhận ra tác nhân giúp não chuẩn bị trước — không bị bất ngờ nữa.',
+    commonTriggers: 'Yếu tố kích hoạt thường gặp',
+    triggerHelp: 'Nhận ra yếu tố kích hoạt giúp não chuẩn bị trước — không bị bất ngờ nữa.',
     todayNote: 'Ghi chú hôm nay',
     noteHelp: 'Viết ra cảm xúc giúp giảm 40% cường độ cơn thèm (theo nghiên cứu).',
     notePlaceholder: 'Hôm nay tôi cảm thấy... / Điều khó khăn nhất lúc này là...',
@@ -44,14 +44,14 @@ export const strings = {
     noteSaved: 'Ghi chú đã được lưu ✓',
     noteEmpty: 'Hãy viết gì đó trước khi lưu',
 
-    // Info boxes
-    info1: 'Ghi chú cảm xúc mỗi ngày giúp não nhận diện tác nhân — nghiên cứu cho thấy viết ra giảm 40% cường độ cơn thèm.',
-    info2: 'Cơn thèm như sóng biển — nó lên rồi tự xuống sau 15-20 phút nếu bạn không nuôi dưỡng nó.',
-    info3: 'Mỗi lần vượt qua cơn thèm = tạo đường thần kinh mới. Làm đủ nhiều lần, con đường cũ tự mờ đi.',
+    // Info boxes — thuần Việt
+    info1: 'Ghi chú cảm xúc mỗi ngày giúp não nhận ra quy luật của cơn thèm — nghiên cứu cho thấy viết ra giảm 40% cường độ.',
+    info2: 'Cơn thèm như sóng biển — nó lên rồi tự xuống sau 15–20 phút nếu bạn không làm theo nó.',
+    info3: 'Mỗi lần vượt qua cơn thèm, não tạo ra một đường dẫn thần kinh mới. Làm đủ nhiều lần, đường cũ tự mờ đi.',
 
     // Urge surf
     urgeTitle: 'Vượt sóng cơn thèm',
-    urgeSubtitle: 'Cơn thèm như sóng — hãy quan sát nó, không phản ứng theo',
+    urgeSubtitle: 'Cơn thèm như sóng — hãy quan sát nó, không làm theo nó',
     urgeInstruction: 'Ngồi yên, hít thở, và quan sát cảm giác mà không hành động',
     urgeReplacement: 'Trong lúc chờ, thử một trong các cách này:',
     urgeOvercome: 'Tôi đã vượt qua rồi ✓',
@@ -62,9 +62,9 @@ export const strings = {
     musicLabel: 'Nghe nhạc yêu thích',
     callLabel: 'Gọi cho bạn bè',
     writeLabel: 'Viết ra cảm xúc',
-    breatheLabel: 'Hít thở 4-7-8',
+    breatheLabel: 'Hít thở sâu 4-7-8',
     overcameToast: 'Xuất sắc! Bạn đã vượt qua cơn thèm 💪',
-    relapseToast: 'Đã ghi nhận. Tái nghiện là dữ liệu, không phải thất bại.',
+    relapseToast: 'Đã ghi nhận. Tái nghiện là bài học, không phải thất bại.',
 
     // Coach
     coachTitle: 'Trò chuyện AI',
@@ -76,15 +76,15 @@ export const strings = {
     you: 'Bạn',
 
     // Journal
-    journalTitle: 'Nhật ký tác nhân',
-    journalSubtitle: 'Ghi lại ngay khi có cơn thèm để nhận ra quy luật',
-    whatTrigger: 'Tác nhân lúc này là gì?',
+    journalTitle: 'Nhật ký cơn thèm',
+    journalSubtitle: 'Ghi lại ngay khi có cơn thèm để nhận ra quy luật của bản thân',
+    whatTrigger: 'Yếu tố kích hoạt lúc này là gì?',
     intensity: 'Cường độ',
     journalNotePlaceholder: 'Bạn đang ở đâu, làm gì, cảm thấy gì ngay lúc này?',
-    logTrigger: 'Ghi lại tác nhân này',
-    triggerLogged: 'Tác nhân đã được ghi lại',
+    logTrigger: 'Ghi lại cơn thèm này',
+    triggerLogged: 'Đã ghi lại thành công',
 
-    // Trigger labels
+    // Trigger labels — thuần Việt
     stress: 'Căng thẳng',
     boredom: 'Buồn chán',
     lonely: 'Cô đơn',
@@ -92,7 +92,7 @@ export const strings = {
     conflict: 'Xung đột',
     socialPressure: 'Áp lực xã hội',
     afterEating: 'Sau bữa ăn',
-    environment: 'Môi trường',
+    environment: 'Môi trường xung quanh',
     other: 'Khác',
 
     // History
@@ -103,7 +103,7 @@ export const strings = {
     relapse: 'Tái nghiện',
     logged: 'Đã ghi',
 
-    // Milestones
+    // Milestones — thuần Việt
     milestonesTitle: 'Cột mốc',
     milestonesSubtitle: 'Mỗi ngày sạch là một chiến thắng thật sự',
     daysMore: 'ngày nữa',
@@ -152,12 +152,12 @@ export const strings = {
     noteSaved: 'Note saved ✓',
     noteEmpty: 'Write something before saving',
 
-    info1: 'Daily emotional journaling helps your brain identify trigger patterns — research shows writing reduces craving intensity by 40%.',
+    info1: 'Daily emotional journaling helps your brain identify craving patterns — research shows writing reduces craving intensity by 40%.',
     info2: 'Cravings are like waves — they rise and fall within 15-20 minutes if you don\'t act on them.',
-    info3: 'Every time you overcome a craving = a new neural pathway forms. Do it enough times, the old path fades.',
+    info3: 'Every time you overcome a craving, your brain builds a new neural pathway. Do it enough times, the old path fades away.',
 
     urgeTitle: 'Urge Surfing',
-    urgeSubtitle: 'Cravings are like waves — observe it, don\'t react to it',
+    urgeSubtitle: 'Cravings are like waves — observe it, don\'t act on it',
     urgeInstruction: 'Sit still, breathe, and observe the feeling without acting on it',
     urgeReplacement: 'While waiting, try one of these:',
     urgeOvercome: 'I made it through ✓',
@@ -170,7 +170,7 @@ export const strings = {
     writeLabel: 'Write out feelings',
     breatheLabel: '4-7-8 breathing',
     overcameToast: 'Amazing! You overcame the craving 💪',
-    relapseToast: 'Noted. A relapse is data, not failure.',
+    relapseToast: 'Noted. A relapse is a lesson, not a failure.',
 
     coachTitle: 'AI Coach',
     coachSubtitle: 'Safe, private, non-judgmental',
@@ -180,13 +180,13 @@ export const strings = {
     coachError: 'Cannot connect right now. Please try again.',
     you: 'You',
 
-    journalTitle: 'Trigger Journal',
-    journalSubtitle: 'Log immediately when you have a craving to find patterns',
+    journalTitle: 'Craving Journal',
+    journalSubtitle: 'Log immediately when you have a craving to find your patterns',
     whatTrigger: 'What is triggering you right now?',
     intensity: 'Intensity',
     journalNotePlaceholder: 'Where are you, what are you doing, what do you feel right now?',
-    logTrigger: 'Log this trigger',
-    triggerLogged: 'Trigger logged',
+    logTrigger: 'Log this craving',
+    triggerLogged: 'Craving logged successfully',
 
     stress: 'Stress',
     boredom: 'Boredom',
@@ -200,7 +200,7 @@ export const strings = {
 
     historyTitle: 'History',
     historySubtitle: 'Every entry is data that helps you understand yourself better',
-    noHistory: 'No entries yet. Start logging your triggers.',
+    noHistory: 'No entries yet. Start logging your cravings.',
     overcame: 'Overcame',
     relapse: 'Relapse',
     logged: 'Logged',
